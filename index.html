@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رتل</title>
+  <meta name="description" content="رتل: سمّع القرآن الكريم بصوتك، والتطبيق يتابعك كلمة بكلمة وينبهك على الأخطاء.">
+  <meta name="theme-color" content="#1B2A4A">
+  <link rel="icon" href="icon.png">
+  <style>
+    @font-face { font-family: Tajawal; src: url(fonts/Tajawal-Regular.ttf); font-weight: 400; font-display: swap; }
+    @font-face { font-family: Tajawal; src: url(fonts/Tajawal-Bold.ttf); font-weight: 700; font-display: swap; }
+    :root {
+      --bg: #FBF7EE; --card: #FFFDF8; --border: #E2D9C3; --ink: #1C2130; --muted: #5C6272;
+      --button: #1B2A4A; --button-end: #2C4272; --on-button: #FBF7EE; --accent: #9A6F22;
+      --shadow: rgba(27, 42, 74, .28);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0E1424; --card: #161D31; --border: #2B344C; --ink: #ECE7DB; --muted: #A9AEBB;
+        --button: #E5B765; --button-end: #C8963E; --on-button: #1F1605; --accent: #E5B765;
+        --shadow: rgba(0, 0, 0, .45);
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.7 Tajawal, system-ui, sans-serif; }
+    main { max-width: 632px; margin: 0 auto; padding: 34px 16px 48px; text-align: center; }
+    .icon { width: 160px; height: 160px; border-radius: 36px; display: block; margin: 0 auto 26px; box-shadow: 0 14px 34px var(--shadow); }
+    h1 { margin: 0; font-size: 44px; font-weight: 700; line-height: 1.3; }
+    .tagline { margin: 4px 0 28px; color: var(--muted); font-size: 20px; }
+    .download {
+      display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 80px; border-radius: 22px;
+      background: linear-gradient(90deg, var(--button-end), var(--button)); color: var(--on-button);
+      font-size: 22px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 24px var(--shadow);
+    }
+    .download:hover { filter: brightness(1.1); }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .meta { margin: 16px 0 6px; color: var(--muted); }
+    .web { color: var(--muted); }
+    section { margin-top: 36px; padding: 22px 28px; text-align: start; background: var(--card); border: 1px solid var(--border); border-radius: 22px; }
+    section + section { margin-top: 24px; }
+    h2 { margin: 0 0 10px; font-size: 20px; font-weight: 700; }
+    ol, ul { margin: 0; padding-inline-start: 22px; color: var(--muted); }
+    li { padding: 3px 0; }
+    li::marker { color: var(--accent); }
+    @media (max-width: 480px) {
+      main { padding-top: 28px; }
+      .icon { width: 128px; height: 128px; border-radius: 30px; }
+      h1 { font-size: 38px; }
+      .tagline { font-size: 18px; }
+      .download { min-height: 68px; font-size: 20px; }
+      section { padding: 18px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="icon" src="icon.png" alt="أيقونة تطبيق رتل" width="160" height="160">
+    <h1>رتل</h1>
+    <p class="tagline">سمّع القرآن بصوتك، ورتل يتابعك كلمة بكلمة</p>
+
+    <a class="download" href="https://github.com/abdallah4f7/rattl/releases/latest/download/rattl.apk">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 16 6.3 10.3l1.4-1.4 3.3 3.3V3zM5 19h14v2H5z"/></svg>
+      تحميل
+    </a>
+    <p class="meta">الإصدار 1.0.1، حجم الملف 59 ميجا</p>
+    <a class="web" href="app/">عندك آيفون أو كمبيوتر؟ افتح نسخة الويب</a>
+
+    <section>
+      <h2>طريقة التثبيت على أندرويد</h2>
+      <ol>
+        <li>اضغط «تحميل».</li>
+        <li>افتح الملف بعد ما يخلص التحميل.</li>
+        <li>إذا طلب منك الجوال، اسمح بالتثبيت من هذا المصدر.</li>
+        <li>اضغط «تثبيت» وافتح التطبيق.</li>
+        <li>وافق على إذن الميكروفون عند أول تسميع.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>المميزات</h2>
+      <ul>
+        <li>متابعة تلاوتك مباشرة، وتنبيهك على الكلمات الخاطئة والمتروكة</li>
+        <li>إخفاء الآيات للتسميع من الحفظ</li>
+        <li>المصحف كاملاً بفهرس السور والأجزاء والعلامات</li>
+        <li>الاستماع إلى 9 قراء مع تكرار الآية</li>
+        <li>البحث عن الآيات بالكتابة أو بصوتك</li>
+        <li>التفسير الميسر والترجمة الإنجليزية</li>
+        <li>هدف يومي وسلسلة أيام ومراجعة لأخطائك</li>
+        <li>تنبيه داخل التطبيق عند توفر تحديث جديد</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
